@@ -1071,8 +1071,8 @@
         "max_absolute_error": 5.820766091346741e-11
       }
     ],
-    "all_inference_outputs_bitwise_repeatable": true,
-    "note": "Only py314 training_updated_head differs on this repeat, max 5.82e-11; loss matches. cuDNN determinism is not a guarantee for every backward operator."
+    "note": "Only py314 training_updated_head differs on this repeat, max 5.82e-11; loss matches. cuDNN determinism is not a guarantee for every backward operator.",
+    "selected_inference_outputs_bitwise_repeatable": true
   },
   "annotated_sample": {
     "sources": {
