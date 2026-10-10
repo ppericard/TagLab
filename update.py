@@ -6,7 +6,6 @@ import tempfile
 import zipfile
 import shutil
 import subprocess
-from distutils.dir_util import copy_tree
 from pathlib import Path
 from model_download import ensure_model
 
@@ -90,7 +89,7 @@ if need_to_update:
     for file_name in file_names:
         file_path = os.path.join(source_dir, file_name)
         if (os.path.isdir(file_path)):
-            copy_tree(file_path, os.path.join(target_dir, file_name))
+            shutil.copytree(file_path, os.path.join(target_dir, file_name), dirs_exist_ok=True)
         elif(file_name != 'config.json'):
             shutil.move(os.path.join(source_dir, file_name), os.path.join(target_dir, file_name))
 

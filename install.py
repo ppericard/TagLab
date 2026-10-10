@@ -1,6 +1,7 @@
 import platform
 import re
 import sys
+import sysconfig
 import os
 import subprocess
 from subprocess import STDOUT, check_call
@@ -12,8 +13,16 @@ if osused != 'Linux' and osused != 'Windows' and osused != 'Darwin':
     raise Exception("Operative System not supported")
 
 # check python version
-if sys.version_info[0] < 3 or (sys.version_info[0] == 3 and (sys.version_info[1] != 11)):
-    raise Exception("Python " + str(sys.version_info[0]) + "." + str(sys.version_info[1]) + " not supported. Please see https://github.com/cnr-isti-vclab/TagLab/wiki/Install-TagLab")
+python_version = sys.version_info[:2]
+if python_version not in ((3, 11), (3, 14)):
+    raise RuntimeError('Use Python 3.11 or 3.14 to install TagLab.')
+if python_version == (3, 14):
+    if platform.python_implementation() != 'CPython':
+        raise RuntimeError('Use standard CPython 3.14 for this installation profile.')
+    if osused != 'Windows' or platform.machine().lower() not in ('amd64', 'x86_64') or sys.maxsize <= 2**32:
+        raise RuntimeError('Python 3.14 installation is currently supported on Windows x64 only.')
+    if sysconfig.get_config_var('Py_GIL_DISABLED'):
+        raise RuntimeError('The free-threaded Python build is not supported. Use standard Python 3.14.')
 
 # manage torch
 
@@ -46,6 +55,15 @@ mac_torch_install_dict = {
 
 # supported cuda versions by torch
 torch_cuda_versions = ['12.4', '12.1', '11.8', '11.6']
+
+# Keep the existing Python 3.11 profile. Python 3.14 needs newer wheels.
+if python_version == (3, 14):
+    win_torch_install_dict = {
+        '12.8': ['torch==2.9.1', 'torchvision==0.24.1', '--index-url', 'https://download.pytorch.org/whl/cu128'],
+        '12.6': ['torch==2.9.1', 'torchvision==0.24.1', '--index-url', 'https://download.pytorch.org/whl/cu126'],
+        'cpu': ['torch==2.9.1', 'torchvision==0.24.1', '--index-url', 'https://download.pytorch.org/whl/cpu'],
+    }
+    torch_cuda_versions = ['12.8', '12.6']
 
 if osused == 'Windows':
     torch_install_dict = win_torch_install_dict
@@ -280,6 +298,10 @@ else:
     # compute rasterio and gdal urls download
     rasterio_win_version = '1.3.11'
     gdal_win_version = '3.9.2'
+    if python_version == (3, 14):
+        base_url = 'https://github.com/cgohlke/geospatial-wheels/releases/download/v2026.2.26/'
+        rasterio_win_version = '1.5.0'
+        gdal_win_version = '3.12.2'
     filename_gdal = 'gdal-' + gdal_win_version + '-cp' + pythonversion + '-cp' + pythonversion
     filename_rasterio = 'rasterio-' + rasterio_win_version +'-cp' + pythonversion + '-cp' + pythonversion
     filename_gdal += '-win_amd64.whl'

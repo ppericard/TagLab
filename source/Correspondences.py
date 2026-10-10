@@ -15,7 +15,7 @@ class Correspondences(object):
         self.dead = []
         self.born = []
         self.threshold = 1.05
-        self.data = pd.DataFrame(data = correspondences, columns=['Genet', 'Blob1', 'Blob2', 'Area1', 'Area2', 'Class', 'Action', 'Split\Fuse'])
+        self.data = pd.DataFrame(data = correspondences, columns=['Genet', 'Blob1', 'Blob2', 'Area1', 'Area2', 'Class', 'Action', 'Split\\Fuse'])
         self.area_type_shown = False  # True means that the surface area is currently shown
 
     def area_in_sq_cm(self, area, is_source):
