@@ -1,0 +1,2123 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-10",
+  "platform_scope": "Ordinary CPython 3.14 on Windows x64; legacy 3.11 retained",
+  "base_revision": "6e775f392e1c3e208e28bb544e9a21c7cc67e3a1",
+  "reference_branch": "personal",
+  "experiment_branch": "feature/python-314",
+  "profiles": {
+    "py311": {
+      "python": "3.11.17 | packaged by Anaconda, Inc. | (main, Oct  1 2026, 20:16:54) [MSC v.1942 64 bit (AMD64)]",
+      "packages": {
+        "affine": "3.0.1",
+        "albucore": "0.0.24",
+        "albumentations": "2.0.8",
+        "annotated-types": "0.8.0",
+        "attrs": "26.1.0",
+        "beautifulsoup4": "4.15.0",
+        "certifi": "2026.7.22",
+        "cffi": "2.1.1",
+        "charset-normalizer": "3.5.2",
+        "click": "8.5.0",
+        "click-plugins": "1.1.1.2",
+        "cligj": "0.7.2",
+        "cloudpickle": "3.1.2",
+        "contourpy": "1.3.3",
+        "cycler": "0.12.1",
+        "ezdxf": "1.4.4",
+        "filelock": "3.32.3",
+        "fonttools": "4.66.1",
+        "fsspec": "2026.7.0",
+        "gdal": "3.9.2",
+        "h11": "0.16.0",
+        "idna": "3.20",
+        "imageio": "2.38.1",
+        "jinja2": "3.1.6",
+        "joblib": "1.6.0",
+        "kiwisolver": "1.5.1",
+        "lazy-loader": "0.6",
+        "markupsafe": "3.0.3",
+        "matplotlib": "3.11.2",
+        "mpmath": "1.3.0",
+        "msvc-runtime": "14.44.35112",
+        "narwhals": "2.26.0",
+        "networkx": "3.6.1",
+        "numpy": "2.4.6",
+        "opencv-python": "5.0.0.93",
+        "opencv-python-headless": "5.0.0.93",
+        "outcome": "1.3.0.post0",
+        "packaging": "26.3",
+        "pandas": "3.0.6",
+        "pillow": "12.3.0",
+        "pip": "26.2.1",
+        "pycocotools": "2.0.11",
+        "pycparser": "3.1",
+        "pydantic": "2.14.0",
+        "pydantic-core": "2.50.0",
+        "pyparsing": "3.3.3",
+        "pyqt5": "5.15.11",
+        "pyqt5-qt5": "5.15.2",
+        "pyqt5-sip": "12.20.0",
+        "pysocks": "1.7.1",
+        "python-dateutil": "2.9.0.post0",
+        "python-dotenv": "1.2.4",
+        "pyyaml": "6.0.3",
+        "qhoptim": "1.1.0",
+        "rasterio": "1.3.11",
+        "requests": "2.34.2",
+        "scikit-image": "0.26.0",
+        "scikit-learn": "1.9.1",
+        "scipy": "1.17.1",
+        "segment-anything": "1.0",
+        "selenium": "4.50.0",
+        "setuptools": "84.0.0",
+        "shapely": "2.2.0",
+        "simsimd": "6.5.16",
+        "six": "1.17.0",
+        "sniffio": "1.3.1",
+        "snuggs": "1.4.7",
+        "sortedcontainers": "2.4.0",
+        "soupsieve": "2.10",
+        "stringzilla": "5.2.0",
+        "sympy": "1.13.1",
+        "threadpoolctl": "3.7.0",
+        "tifffile": "2026.3.3",
+        "torch": "2.5.0+cu124",
+        "torchvision": "0.20.0+cu124",
+        "trio": "0.34.0",
+        "trio-websocket": "0.12.2",
+        "typing-extensions": "4.16.0",
+        "typing-inspection": "0.4.4",
+        "tzdata": "2026.5",
+        "urllib3": "2.8.0",
+        "webdriver-manager": "4.1.2",
+        "websocket-client": "1.9.2",
+        "wheel": "0.47.0",
+        "wsproto": "1.3.2"
+      },
+      "user_site_enabled": false
+    },
+    "py314": {
+      "python": "3.14.8 | packaged by conda-forge | (main, Oct  7 2026, 00:24:12) [MSC v.1944 64 bit (AMD64)]",
+      "packages": {
+        "affine": "3.0.1",
+        "albucore": "0.0.24",
+        "albumentations": "2.0.8",
+        "annotated-types": "0.8.0",
+        "attrs": "26.1.0",
+        "beautifulsoup4": "4.15.0",
+        "certifi": "2026.7.22",
+        "cffi": "2.1.1",
+        "charset-normalizer": "3.5.2",
+        "click": "8.5.0",
+        "cligj": "0.7.2",
+        "cloudpickle": "3.1.2",
+        "contourpy": "1.4.0",
+        "cycler": "0.12.1",
+        "ezdxf": "1.4.4",
+        "filelock": "3.32.3",
+        "fonttools": "4.66.1",
+        "fsspec": "2026.7.0",
+        "gdal": "3.12.2",
+        "h11": "0.16.0",
+        "idna": "3.20",
+        "imageio": "2.38.1",
+        "jinja2": "3.1.6",
+        "joblib": "1.6.0",
+        "kiwisolver": "1.5.1",
+        "lazy-loader": "0.6",
+        "markupsafe": "3.0.3",
+        "matplotlib": "3.11.2",
+        "mpmath": "1.3.0",
+        "msvc-runtime": "14.44.35112",
+        "narwhals": "2.26.0",
+        "networkx": "3.7",
+        "numpy": "2.5.3",
+        "opencv-python": "5.0.0.93",
+        "opencv-python-headless": "5.0.0.93",
+        "outcome": "1.3.0.post0",
+        "packaging": "26.3",
+        "pandas": "3.0.6",
+        "pillow": "12.3.0",
+        "pip": "26.2.1",
+        "pycocotools": "2.0.11",
+        "pycparser": "3.11",
+        "pydantic": "2.14.0",
+        "pydantic-core": "2.50.0",
+        "pyparsing": "3.3.3",
+        "pyqt5": "5.15.11",
+        "pyqt5-qt5": "5.15.2",
+        "pyqt5-sip": "12.20.0",
+        "pysocks": "1.7.1",
+        "python-dateutil": "2.9.0.post0",
+        "python-dotenv": "1.2.4",
+        "pyyaml": "6.0.3",
+        "qhoptim": "1.1.0",
+        "rasterio": "1.5.0",
+        "requests": "2.34.2",
+        "scikit-image": "0.26.0",
+        "scikit-learn": "1.9.1",
+        "scipy": "1.18.1",
+        "segment-anything": "1.0",
+        "selenium": "4.51.0",
+        "setuptools": "78.1.0",
+        "shapely": "2.2.0",
+        "simsimd": "6.5.16",
+        "six": "1.17.0",
+        "sniffio": "1.3.1",
+        "sortedcontainers": "2.4.0",
+        "soupsieve": "2.10",
+        "stringzilla": "5.2.0",
+        "sympy": "1.14.0",
+        "threadpoolctl": "3.7.0",
+        "tifffile": "2026.9.20",
+        "torch": "2.9.1+cu128",
+        "torchvision": "0.24.1+cu128",
+        "trio": "0.34.0",
+        "trio-websocket": "0.12.2",
+        "typing-extensions": "4.16.0",
+        "typing-inspection": "0.4.4",
+        "tzdata": "2026.5",
+        "urllib3": "2.8.0",
+        "webdriver-manager": "4.1.2",
+        "websocket-client": "1.9.2",
+        "wheel": "0.48.0",
+        "wsproto": "1.3.2"
+      },
+      "user_site_enabled": false
+    }
+  },
+  "functional_checks": {
+    "py311": [
+      {
+        "name": "Activated Conda environment with user site disabled",
+        "passed": true
+      },
+      {
+        "name": "GUI startup and offscreen rendering",
+        "passed": true
+      },
+      {
+        "name": "Rasterio/GDAL geospatial roundtrip",
+        "passed": true
+      },
+      {
+        "name": "TagLab project save/load roundtrip",
+        "passed": true
+      },
+      {
+        "name": "Color augmentation parameters and all transforms",
+        "passed": true
+      },
+      {
+        "name": "TagLab training dataset and optimizer step",
+        "passed": true
+      },
+      {
+        "name": "Load all six legacy pretrained checkpoints",
+        "passed": true
+      },
+      {
+        "name": "RITM CPU inference",
+        "passed": true
+      },
+      {
+        "name": "RITM CUDA inference",
+        "passed": true
+      },
+      {
+        "name": "DEXTR application loading and CPU inference",
+        "passed": true
+      },
+      {
+        "name": "DEXTR application loading and CUDA inference",
+        "passed": true
+      },
+      {
+        "name": "All configured map classifiers loading and CPU inference",
+        "passed": true
+      },
+      {
+        "name": "Pretrained DeepLab backward and QHAdam training step",
+        "passed": true
+      },
+      {
+        "name": "SAM CPU inference with complete checkpoint",
+        "passed": true
+      },
+      {
+        "name": "SAM CUDA inference with complete checkpoint",
+        "passed": true
+      }
+    ],
+    "py314": [
+      {
+        "name": "Activated Conda environment with user site disabled",
+        "passed": true
+      },
+      {
+        "name": "GUI startup and offscreen rendering",
+        "passed": true
+      },
+      {
+        "name": "Rasterio/GDAL geospatial roundtrip",
+        "passed": true
+      },
+      {
+        "name": "TagLab project save/load roundtrip",
+        "passed": true
+      },
+      {
+        "name": "Color augmentation parameters and all transforms",
+        "passed": true
+      },
+      {
+        "name": "TagLab training dataset and optimizer step",
+        "passed": true
+      },
+      {
+        "name": "Load all six legacy pretrained checkpoints",
+        "passed": true
+      },
+      {
+        "name": "RITM CPU inference",
+        "passed": true
+      },
+      {
+        "name": "RITM CUDA inference",
+        "passed": true
+      },
+      {
+        "name": "DEXTR application loading and CPU inference",
+        "passed": true
+      },
+      {
+        "name": "DEXTR application loading and CUDA inference",
+        "passed": true
+      },
+      {
+        "name": "All configured map classifiers loading and CPU inference",
+        "passed": true
+      },
+      {
+        "name": "Pretrained DeepLab backward and QHAdam training step",
+        "passed": true
+      },
+      {
+        "name": "SAM CPU inference with complete checkpoint",
+        "passed": true
+      },
+      {
+        "name": "SAM CUDA inference with complete checkpoint",
+        "passed": true
+      }
+    ]
+  },
+  "unit_tests": {
+    "py311": {
+      "passed": 38,
+      "failed": 0
+    },
+    "py314": {
+      "passed": 38,
+      "failed": 0
+    }
+  },
+  "backend_flags": {
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "cudnn_tf32": true,
+    "matmul_tf32": false
+  },
+  "input_hashes": {
+    "circle": "60a7361073d239f6a219692b3ea8e815aef5fd6b25b5bb24988cfee712d8a397",
+    "ellipse": "61e916f7b952d3311c76b41fbdb72977c2cc904107abcb2d8a4bb257d77a43bf",
+    "texture": "7e11a5b59f9350b803879467f80865a368bb9bf1e555cf4a7ad12689e19ec20c"
+  },
+  "checkpoint_hashes": {
+    "ritm_corals.pth": "ea7c9fd2bd4215f32439a9539aa9f488fde0656691d74f41341d826e8cf6db47",
+    "dextr_corals.pth": "ea288e2560cd83a040c461c43a820cdb9512f740703f845873fe055c73b43c01",
+    "deeplab-resnet.pth.tar": "3c1ca4610f1ff8c118b451aa0ab30048554a9e77b794f7174808c457e935913a",
+    "porites.net": "da7f92e59f27e479f4620c148fc7d209864470a6c44da8c99916c4d97f181316",
+    "pocillopora.net": "b405da54814d8fc724c44f81f5c4296e1dcd07b345c43fea632ac4625dad90a8",
+    "pocillopora_porite_montipora.net": "44c90aa154de0e0d2945923c5f3c188b85aa639265bead1a25765832995a5077"
+  },
+  "synthetic_comparisons": [
+    {
+      "name": "ritm_cpu_circle",
+      "shape": [
+        256,
+        256
+      ],
+      "exact_equal": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "threshold": 0.5,
+      "changed_mask_pixels": 0,
+      "mask_pixels": 65536,
+      "positive_pixels_baseline": 13317,
+      "positive_pixels_candidate": 13317,
+      "mask_iou": 1.0,
+      "components_baseline": 1,
+      "components_candidate": 1,
+      "summed_region_area_baseline": 13317.0,
+      "summed_region_area_candidate": 13317.0
+    },
+    {
+      "name": "ritm_cpu_ellipse",
+      "shape": [
+        256,
+        256
+      ],
+      "exact_equal": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "threshold": 0.5,
+      "changed_mask_pixels": 0,
+      "mask_pixels": 65536,
+      "positive_pixels_baseline": 11183,
+      "positive_pixels_candidate": 11183,
+      "mask_iou": 1.0,
+      "components_baseline": 1,
+      "components_candidate": 1,
+      "summed_region_area_baseline": 11183.0,
+      "summed_region_area_candidate": 11183.0
+    },
+    {
+      "name": "ritm_cpu_texture",
+      "shape": [
+        256,
+        256
+      ],
+      "exact_equal": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "threshold": 0.5,
+      "changed_mask_pixels": 0,
+      "mask_pixels": 65536,
+      "positive_pixels_baseline": 63932,
+      "positive_pixels_candidate": 63932,
+      "mask_iou": 1.0,
+      "components_baseline": 1,
+      "components_candidate": 1,
+      "summed_region_area_baseline": 63932.0,
+      "summed_region_area_candidate": 63932.0
+    },
+    {
+      "name": "dextr_cpu_circle",
+      "shape": [
+        256,
+        256
+      ],
+      "exact_equal": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "threshold": 0.8,
+      "changed_mask_pixels": 0,
+      "mask_pixels": 65536,
+      "positive_pixels_baseline": 13433,
+      "positive_pixels_candidate": 13433,
+      "mask_iou": 1.0,
+      "components_baseline": 1,
+      "components_candidate": 1,
+      "summed_region_area_baseline": 13433.0,
+      "summed_region_area_candidate": 13433.0
+    },
+    {
+      "name": "dextr_cpu_ellipse",
+      "shape": [
+        256,
+        256
+      ],
+      "exact_equal": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "threshold": 0.8,
+      "changed_mask_pixels": 0,
+      "mask_pixels": 65536,
+      "positive_pixels_baseline": 11499,
+      "positive_pixels_candidate": 11499,
+      "mask_iou": 1.0,
+      "components_baseline": 1,
+      "components_candidate": 1,
+      "summed_region_area_baseline": 11499.0,
+      "summed_region_area_candidate": 11499.0
+    },
+    {
+      "name": "dextr_cpu_texture",
+      "shape": [
+        256,
+        256
+      ],
+      "exact_equal": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "threshold": 0.8,
+      "changed_mask_pixels": 0,
+      "mask_pixels": 65536,
+      "positive_pixels_baseline": 11833,
+      "positive_pixels_candidate": 11833,
+      "mask_iou": 1.0,
+      "components_baseline": 1,
+      "components_candidate": 1,
+      "summed_region_area_baseline": 11833.0,
+      "summed_region_area_candidate": 11833.0
+    },
+    {
+      "name": "classifier_porites_cpu_circle",
+      "shape": [
+        2,
+        128,
+        128
+      ],
+      "exact_equal": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_class_pixels": 0,
+      "class_pixels": 16384,
+      "class_pixel_counts_baseline": [
+        16192,
+        192
+      ],
+      "class_pixel_counts_candidate": [
+        16192,
+        192
+      ]
+    },
+    {
+      "name": "classifier_porites_cpu_ellipse",
+      "shape": [
+        2,
+        128,
+        128
+      ],
+      "exact_equal": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_class_pixels": 0,
+      "class_pixels": 16384,
+      "class_pixel_counts_baseline": [
+        0,
+        16384
+      ],
+      "class_pixel_counts_candidate": [
+        0,
+        16384
+      ]
+    },
+    {
+      "name": "classifier_porites_cpu_texture",
+      "shape": [
+        2,
+        128,
+        128
+      ],
+      "exact_equal": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_class_pixels": 0,
+      "class_pixels": 16384,
+      "class_pixel_counts_baseline": [
+        0,
+        16384
+      ],
+      "class_pixel_counts_candidate": [
+        0,
+        16384
+      ]
+    },
+    {
+      "name": "classifier_pocillopora_cpu_circle",
+      "shape": [
+        2,
+        128,
+        128
+      ],
+      "exact_equal": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_class_pixels": 0,
+      "class_pixels": 16384,
+      "class_pixel_counts_baseline": [
+        0,
+        16384
+      ],
+      "class_pixel_counts_candidate": [
+        0,
+        16384
+      ]
+    },
+    {
+      "name": "classifier_pocillopora_cpu_ellipse",
+      "shape": [
+        2,
+        128,
+        128
+      ],
+      "exact_equal": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_class_pixels": 0,
+      "class_pixels": 16384,
+      "class_pixel_counts_baseline": [
+        0,
+        16384
+      ],
+      "class_pixel_counts_candidate": [
+        0,
+        16384
+      ]
+    },
+    {
+      "name": "classifier_pocillopora_cpu_texture",
+      "shape": [
+        2,
+        128,
+        128
+      ],
+      "exact_equal": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_class_pixels": 0,
+      "class_pixels": 16384,
+      "class_pixel_counts_baseline": [
+        0,
+        16384
+      ],
+      "class_pixel_counts_candidate": [
+        0,
+        16384
+      ]
+    },
+    {
+      "name": "classifier_pocillopora_porite_montipora_cpu_circle",
+      "shape": [
+        4,
+        128,
+        128
+      ],
+      "exact_equal": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_class_pixels": 0,
+      "class_pixels": 16384,
+      "class_pixel_counts_baseline": [
+        0,
+        0,
+        0,
+        16384
+      ],
+      "class_pixel_counts_candidate": [
+        0,
+        0,
+        0,
+        16384
+      ]
+    },
+    {
+      "name": "classifier_pocillopora_porite_montipora_cpu_ellipse",
+      "shape": [
+        4,
+        128,
+        128
+      ],
+      "exact_equal": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_class_pixels": 0,
+      "class_pixels": 16384,
+      "class_pixel_counts_baseline": [
+        0,
+        32,
+        0,
+        16352
+      ],
+      "class_pixel_counts_candidate": [
+        0,
+        32,
+        0,
+        16352
+      ]
+    },
+    {
+      "name": "classifier_pocillopora_porite_montipora_cpu_texture",
+      "shape": [
+        4,
+        128,
+        128
+      ],
+      "exact_equal": true,
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "changed_class_pixels": 0,
+      "class_pixels": 16384,
+      "class_pixel_counts_baseline": [
+        0,
+        0,
+        0,
+        16384
+      ],
+      "class_pixel_counts_candidate": [
+        0,
+        0,
+        0,
+        16384
+      ]
+    },
+    {
+      "name": "ritm_cuda_circle",
+      "shape": [
+        256,
+        256
+      ],
+      "exact_equal": false,
+      "max_absolute_error": 0.00016945600509643555,
+      "mean_absolute_error": 1.356573591237975e-05,
+      "threshold": 0.5,
+      "changed_mask_pixels": 0,
+      "mask_pixels": 65536,
+      "positive_pixels_baseline": 13318,
+      "positive_pixels_candidate": 13318,
+      "mask_iou": 1.0,
+      "components_baseline": 1,
+      "components_candidate": 1,
+      "summed_region_area_baseline": 13318.0,
+      "summed_region_area_candidate": 13318.0
+    },
+    {
+      "name": "ritm_cuda_ellipse",
+      "shape": [
+        256,
+        256
+      ],
+      "exact_equal": false,
+      "max_absolute_error": 0.00022786855697631836,
+      "mean_absolute_error": 1.5606096553710813e-05,
+      "threshold": 0.5,
+      "changed_mask_pixels": 0,
+      "mask_pixels": 65536,
+      "positive_pixels_baseline": 11183,
+      "positive_pixels_candidate": 11183,
+      "mask_iou": 1.0,
+      "components_baseline": 1,
+      "components_candidate": 1,
+      "summed_region_area_baseline": 11183.0,
+      "summed_region_area_candidate": 11183.0
+    },
+    {
+      "name": "ritm_cuda_texture",
+      "shape": [
+        256,
+        256
+      ],
+      "exact_equal": false,
+      "max_absolute_error": 0.0003361701965332031,
+      "mean_absolute_error": 6.486860615950718e-05,
+      "threshold": 0.5,
+      "changed_mask_pixels": 0,
+      "mask_pixels": 65536,
+      "positive_pixels_baseline": 63933,
+      "positive_pixels_candidate": 63933,
+      "mask_iou": 1.0,
+      "components_baseline": 1,
+      "components_candidate": 1,
+      "summed_region_area_baseline": 63933.0,
+      "summed_region_area_candidate": 63933.0
+    },
+    {
+      "name": "dextr_cuda_circle",
+      "shape": [
+        256,
+        256
+      ],
+      "exact_equal": false,
+      "max_absolute_error": 0.0009081363677978516,
+      "mean_absolute_error": 3.3116764552311466e-06,
+      "threshold": 0.8,
+      "changed_mask_pixels": 0,
+      "mask_pixels": 65536,
+      "positive_pixels_baseline": 13433,
+      "positive_pixels_candidate": 13433,
+      "mask_iou": 1.0,
+      "components_baseline": 1,
+      "components_candidate": 1,
+      "summed_region_area_baseline": 13433.0,
+      "summed_region_area_candidate": 13433.0
+    },
+    {
+      "name": "dextr_cuda_ellipse",
+      "shape": [
+        256,
+        256
+      ],
+      "exact_equal": false,
+      "max_absolute_error": 0.0012511014938354492,
+      "mean_absolute_error": 1.719778556391778e-05,
+      "threshold": 0.8,
+      "changed_mask_pixels": 2,
+      "mask_pixels": 65536,
+      "positive_pixels_baseline": 11500,
+      "positive_pixels_candidate": 11500,
+      "mask_iou": 0.9998261020780802,
+      "components_baseline": 1,
+      "components_candidate": 1,
+      "summed_region_area_baseline": 11500.0,
+      "summed_region_area_candidate": 11500.0
+    },
+    {
+      "name": "dextr_cuda_texture",
+      "shape": [
+        256,
+        256
+      ],
+      "exact_equal": false,
+      "max_absolute_error": 0.0016129612922668457,
+      "mean_absolute_error": 1.9955360456069826e-05,
+      "threshold": 0.8,
+      "changed_mask_pixels": 2,
+      "mask_pixels": 65536,
+      "positive_pixels_baseline": 11833,
+      "positive_pixels_candidate": 11835,
+      "mask_iou": 0.9998310097169413,
+      "components_baseline": 1,
+      "components_candidate": 1,
+      "summed_region_area_baseline": 11833.0,
+      "summed_region_area_candidate": 11835.0
+    },
+    {
+      "name": "classifier_porites_cuda_circle",
+      "shape": [
+        2,
+        128,
+        128
+      ],
+      "exact_equal": false,
+      "max_absolute_error": 6.019042377702899e-05,
+      "mean_absolute_error": 1.722614115970714e-05,
+      "changed_class_pixels": 0,
+      "class_pixels": 16384,
+      "class_pixel_counts_baseline": [
+        16190,
+        194
+      ],
+      "class_pixel_counts_candidate": [
+        16190,
+        194
+      ]
+    },
+    {
+      "name": "classifier_porites_cuda_ellipse",
+      "shape": [
+        2,
+        128,
+        128
+      ],
+      "exact_equal": false,
+      "max_absolute_error": 6.592291063556299e-05,
+      "mean_absolute_error": 2.2390901914041407e-05,
+      "changed_class_pixels": 0,
+      "class_pixels": 16384,
+      "class_pixel_counts_baseline": [
+        0,
+        16384
+      ],
+      "class_pixel_counts_candidate": [
+        0,
+        16384
+      ]
+    },
+    {
+      "name": "classifier_porites_cuda_texture",
+      "shape": [
+        2,
+        128,
+        128
+      ],
+      "exact_equal": false,
+      "max_absolute_error": 1.6128269726511761e-06,
+      "mean_absolute_error": 1.9045818072413904e-08,
+      "changed_class_pixels": 0,
+      "class_pixels": 16384,
+      "class_pixel_counts_baseline": [
+        0,
+        16384
+      ],
+      "class_pixel_counts_candidate": [
+        0,
+        16384
+      ]
+    },
+    {
+      "name": "classifier_pocillopora_cuda_circle",
+      "shape": [
+        2,
+        128,
+        128
+      ],
+      "exact_equal": false,
+      "max_absolute_error": 1.4940507792049473e-06,
+      "mean_absolute_error": 2.0273497629134237e-07,
+      "changed_class_pixels": 0,
+      "class_pixels": 16384,
+      "class_pixel_counts_baseline": [
+        0,
+        16384
+      ],
+      "class_pixel_counts_candidate": [
+        0,
+        16384
+      ]
+    },
+    {
+      "name": "classifier_pocillopora_cuda_ellipse",
+      "shape": [
+        2,
+        128,
+        128
+      ],
+      "exact_equal": false,
+      "max_absolute_error": 1.1137014212913438e-05,
+      "mean_absolute_error": 8.771294634033122e-07,
+      "changed_class_pixels": 0,
+      "class_pixels": 16384,
+      "class_pixel_counts_baseline": [
+        0,
+        16384
+      ],
+      "class_pixel_counts_candidate": [
+        0,
+        16384
+      ]
+    },
+    {
+      "name": "classifier_pocillopora_cuda_texture",
+      "shape": [
+        2,
+        128,
+        128
+      ],
+      "exact_equal": false,
+      "max_absolute_error": 4.327224506621777e-05,
+      "mean_absolute_error": 8.818777037285697e-06,
+      "changed_class_pixels": 0,
+      "class_pixels": 16384,
+      "class_pixel_counts_baseline": [
+        0,
+        16384
+      ],
+      "class_pixel_counts_candidate": [
+        0,
+        16384
+      ]
+    },
+    {
+      "name": "classifier_pocillopora_porite_montipora_cuda_circle",
+      "shape": [
+        4,
+        128,
+        128
+      ],
+      "exact_equal": false,
+      "max_absolute_error": 9.712677773998646e-05,
+      "mean_absolute_error": 1.2879644813373072e-05,
+      "changed_class_pixels": 0,
+      "class_pixels": 16384,
+      "class_pixel_counts_baseline": [
+        0,
+        0,
+        0,
+        16384
+      ],
+      "class_pixel_counts_candidate": [
+        0,
+        0,
+        0,
+        16384
+      ]
+    },
+    {
+      "name": "classifier_pocillopora_porite_montipora_cuda_ellipse",
+      "shape": [
+        4,
+        128,
+        128
+      ],
+      "exact_equal": false,
+      "max_absolute_error": 7.785568033313872e-05,
+      "mean_absolute_error": 1.5502912281379158e-05,
+      "changed_class_pixels": 0,
+      "class_pixels": 16384,
+      "class_pixel_counts_baseline": [
+        0,
+        33,
+        0,
+        16351
+      ],
+      "class_pixel_counts_candidate": [
+        0,
+        33,
+        0,
+        16351
+      ]
+    },
+    {
+      "name": "classifier_pocillopora_porite_montipora_cuda_texture",
+      "shape": [
+        4,
+        128,
+        128
+      ],
+      "exact_equal": false,
+      "max_absolute_error": 2.0254826070188747e-05,
+      "mean_absolute_error": 7.447576638939602e-07,
+      "changed_class_pixels": 0,
+      "class_pixels": 16384,
+      "class_pixel_counts_baseline": [
+        0,
+        0,
+        0,
+        16384
+      ],
+      "class_pixel_counts_candidate": [
+        0,
+        0,
+        0,
+        16384
+      ]
+    },
+    {
+      "name": "training_loss",
+      "shape": [
+        1
+      ],
+      "exact_equal": false,
+      "max_absolute_error": 6.258487701416016e-06,
+      "mean_absolute_error": 6.258487701416016e-06
+    },
+    {
+      "name": "training_updated_head",
+      "shape": [
+        2,
+        256,
+        1,
+        1
+      ],
+      "exact_equal": false,
+      "max_absolute_error": 3.264285624027252e-07,
+      "mean_absolute_error": 1.8452013250680466e-09
+    }
+  ],
+  "repeatability": {
+    "backend": "TagLab startup: cudnn deterministic True",
+    "controls": [
+      {
+        "profile": "py311",
+        "output": "dextr_cuda_ellipse",
+        "bitwise_repeatable": true,
+        "max_absolute_error": 0.0
+      },
+      {
+        "profile": "py311",
+        "output": "dextr_cuda_texture",
+        "bitwise_repeatable": true,
+        "max_absolute_error": 0.0
+      },
+      {
+        "profile": "py311",
+        "output": "classifier_pocillopora_porite_montipora_cuda_ellipse",
+        "bitwise_repeatable": true,
+        "max_absolute_error": 0.0
+      },
+      {
+        "profile": "py311",
+        "output": "training_loss",
+        "bitwise_repeatable": true,
+        "max_absolute_error": 0.0
+      },
+      {
+        "profile": "py311",
+        "output": "training_updated_head",
+        "bitwise_repeatable": true,
+        "max_absolute_error": 0.0
+      },
+      {
+        "profile": "py314",
+        "output": "dextr_cuda_ellipse",
+        "bitwise_repeatable": true,
+        "max_absolute_error": 0.0
+      },
+      {
+        "profile": "py314",
+        "output": "dextr_cuda_texture",
+        "bitwise_repeatable": true,
+        "max_absolute_error": 0.0
+      },
+      {
+        "profile": "py314",
+        "output": "classifier_pocillopora_porite_montipora_cuda_ellipse",
+        "bitwise_repeatable": true,
+        "max_absolute_error": 0.0
+      },
+      {
+        "profile": "py314",
+        "output": "training_loss",
+        "bitwise_repeatable": true,
+        "max_absolute_error": 0.0
+      },
+      {
+        "profile": "py314",
+        "output": "training_updated_head",
+        "bitwise_repeatable": false,
+        "max_absolute_error": 5.820766091346741e-11
+      }
+    ],
+    "all_inference_outputs_bitwise_repeatable": true,
+    "note": "Only py314 training_updated_head differs on this repeat, max 5.82e-11; loss matches. cuDNN determinism is not a guarantee for every backward operator."
+  },
+  "annotated_sample": {
+    "sources": {
+      "small_annotated_area_project.json": "d33f7b801c56794480374fefd89045baebe3b7e408af4b4f08e24c75f8c810fc",
+      "VOS_RGB.png": "a804fd16a6815e61c165e03ac2a79902b5f395a6d375b2188cfe01e50341a0eb"
+    },
+    "attribution": "Stuart Sandin Lab, Scripps Institution of Oceanography; CC BY-NC-SA 4.0",
+    "sampling": "One median-area eligible region per class; bbox 100..450 pixels, 60-pixel outer margin; one VOS project",
+    "reference": "Rasterized existing annotation contour; no independent ground truth or known train/test separation",
+    "cases": [
+      {
+        "key": "id259",
+        "id": 259,
+        "class": "Montipora_crust/patula",
+        "crop_origin": [
+          1198,
+          2339
+        ],
+        "shape": [
+          345,
+          446,
+          3
+        ],
+        "stored_annotation_area": 22931.0,
+        "raster_reference_pixels": 22931,
+        "positive_click": [
+          192,
+          276
+        ],
+        "negative_click": [
+          0,
+          0
+        ],
+        "extreme_points": [
+          [
+            146,
+            65
+          ],
+          [
+            207,
+            282
+          ],
+          [
+            65,
+            267
+          ],
+          [
+            383,
+            246
+          ]
+        ],
+        "crop_sha256": "25420c6d4c467b416a662a4abb5b41e2b63a68f06d59db8aaf04337a780cae10",
+        "reference_sha256": "8480d7c81d5b2dacd3e38b608a05b6b5a75356849310082d1022d8013bb71e7d",
+        "pixel_size_mm": 0.94
+      },
+      {
+        "key": "id252",
+        "id": 252,
+        "class": "Montipora_plate/flabellata",
+        "crop_origin": [
+          1586,
+          2293
+        ],
+        "shape": [
+          283,
+          268,
+          3
+        ],
+        "stored_annotation_area": 14514.0,
+        "raster_reference_pixels": 14514,
+        "positive_click": [
+          141,
+          138
+        ],
+        "negative_click": [
+          0,
+          0
+        ],
+        "extreme_points": [
+          [
+            162,
+            65
+          ],
+          [
+            158,
+            220
+          ],
+          [
+            65,
+            151
+          ],
+          [
+            205,
+            167
+          ]
+        ],
+        "crop_sha256": "c1d4b613bcaf55926a3cd6fbbe5f02a33bee96a47e2e95c4d118001c11ee838c",
+        "reference_sha256": "4422f4a9d5d339377d1bff91d7b3c9296fcf0820e269a022ada9a430486c3775",
+        "pixel_size_mm": 0.94
+      },
+      {
+        "key": "id62",
+        "id": 62,
+        "class": "Pocillopora",
+        "crop_origin": [
+          2027,
+          317
+        ],
+        "shape": [
+          228,
+          241,
+          3
+        ],
+        "stored_annotation_area": 7936.0,
+        "raster_reference_pixels": 7936,
+        "positive_click": [
+          120,
+          126
+        ],
+        "negative_click": [
+          0,
+          0
+        ],
+        "extreme_points": [
+          [
+            144,
+            65
+          ],
+          [
+            124,
+            165
+          ],
+          [
+            65,
+            113
+          ],
+          [
+            178,
+            105
+          ]
+        ],
+        "crop_sha256": "85080f5add17a2e7b5d4fb4b4a72410776e0b7aa437d756306e8e8940081ff3e",
+        "reference_sha256": "86cb36386cb91b0db580248b8f2a38abc54397e718897e93839a39c6f559ab09",
+        "pixel_size_mm": 0.94
+      },
+      {
+        "key": "id87",
+        "id": 87,
+        "class": "Porite_massive",
+        "crop_origin": [
+          2193,
+          521
+        ],
+        "shape": [
+          321,
+          304,
+          3
+        ],
+        "stored_annotation_area": 21621.0,
+        "raster_reference_pixels": 21621,
+        "positive_click": [
+          156,
+          157
+        ],
+        "negative_click": [
+          0,
+          0
+        ],
+        "extreme_points": [
+          [
+            147,
+            65
+          ],
+          [
+            137,
+            258
+          ],
+          [
+            65,
+            199
+          ],
+          [
+            241,
+            156
+          ]
+        ],
+        "crop_sha256": "111dd202ca42ea6d67003fd9f8a73ecc27d8f714551e94ecd9d3db3f465df635",
+        "reference_sha256": "1e2dc7c5b9fba72b9768c878a890751814552d8c4c04a5b093d5f3f70ac37925",
+        "pixel_size_mm": 0.94
+      }
+    ]
+  },
+  "annotated_sample_comparisons": [
+    {
+      "name": "ritm_cpu_id259",
+      "exact_equal": true,
+      "max_probability_error": 0.0,
+      "changed_mask_pixels": 0,
+      "iou_reference_311": 0.4500745639629125,
+      "iou_reference_314": 0.4500745639629125,
+      "delta_iou_reference": 0.0,
+      "area_cm2_311": 192.607128,
+      "area_cm2_314": 192.607128,
+      "reference_area_cm2": 202.618316
+    },
+    {
+      "name": "ritm_cpu_id252",
+      "exact_equal": true,
+      "max_probability_error": 0.0,
+      "changed_mask_pixels": 0,
+      "iou_reference_311": 0.9001883239171374,
+      "iou_reference_314": 0.9001883239171374,
+      "delta_iou_reference": 0.0,
+      "area_cm2_311": 139.22001600000002,
+      "area_cm2_314": 139.22001600000002,
+      "reference_area_cm2": 128.245704
+    },
+    {
+      "name": "ritm_cpu_id62",
+      "exact_equal": true,
+      "max_probability_error": 0.0,
+      "changed_mask_pixels": 0,
+      "iou_reference_311": 0.9198322069447681,
+      "iou_reference_314": 0.9198322069447681,
+      "delta_iou_reference": 0.0,
+      "area_cm2_311": 75.45944,
+      "area_cm2_314": 75.45944,
+      "reference_area_cm2": 70.122496
+    },
+    {
+      "name": "ritm_cpu_id87",
+      "exact_equal": true,
+      "max_probability_error": 0.0,
+      "changed_mask_pixels": 0,
+      "iou_reference_311": 0.9545740757398579,
+      "iou_reference_314": 0.9545740757398579,
+      "delta_iou_reference": 0.0,
+      "area_cm2_311": 192.951732,
+      "area_cm2_314": 192.951732,
+      "reference_area_cm2": 191.043156
+    },
+    {
+      "name": "dextr_cpu_id259",
+      "exact_equal": true,
+      "max_probability_error": 0.0,
+      "changed_mask_pixels": 0,
+      "iou_reference_311": 0.5906518265767595,
+      "iou_reference_314": 0.5906518265767595,
+      "delta_iou_reference": 0.0,
+      "area_cm2_311": 316.390652,
+      "area_cm2_314": 316.390652,
+      "reference_area_cm2": 202.618316
+    },
+    {
+      "name": "dextr_cpu_id252",
+      "exact_equal": true,
+      "max_probability_error": 0.0,
+      "changed_mask_pixels": 0,
+      "iou_reference_311": 0.9274638292350613,
+      "iou_reference_314": 0.9274638292350613,
+      "delta_iou_reference": 0.0,
+      "area_cm2_311": 134.254184,
+      "area_cm2_314": 134.254184,
+      "reference_area_cm2": 128.245704
+    },
+    {
+      "name": "dextr_cpu_id62",
+      "exact_equal": true,
+      "max_probability_error": 0.0,
+      "changed_mask_pixels": 0,
+      "iou_reference_311": 0.9509791846286488,
+      "iou_reference_314": 0.9509791846286488,
+      "delta_iou_reference": 0.0,
+      "area_cm2_311": 69.839744,
+      "area_cm2_314": 69.839744,
+      "reference_area_cm2": 70.122496
+    },
+    {
+      "name": "dextr_cpu_id87",
+      "exact_equal": true,
+      "max_probability_error": 0.0,
+      "changed_mask_pixels": 0,
+      "iou_reference_311": 0.9586516853932584,
+      "iou_reference_314": 0.9586516853932584,
+      "delta_iou_reference": 0.0,
+      "area_cm2_311": 194.02972400000002,
+      "area_cm2_314": 194.02972400000002,
+      "reference_area_cm2": 191.043156
+    },
+    {
+      "name": "ritm_cuda_id259",
+      "exact_equal": false,
+      "max_probability_error": 0.0002607107162475586,
+      "changed_mask_pixels": 14,
+      "iou_reference_311": 0.4500891554546928,
+      "iou_reference_314": 0.4502643271819155,
+      "delta_iou_reference": 0.00017517172722270047,
+      "area_cm2_311": 192.59829200000001,
+      "area_cm2_314": 192.49226000000002,
+      "reference_area_cm2": 202.618316
+    },
+    {
+      "name": "ritm_cuda_id252",
+      "exact_equal": false,
+      "max_probability_error": 0.00014644861221313477,
+      "changed_mask_pixels": 0,
+      "iou_reference_311": 0.9001883239171374,
+      "iou_reference_314": 0.9001883239171374,
+      "delta_iou_reference": 0.0,
+      "area_cm2_311": 139.22001600000002,
+      "area_cm2_314": 139.22001600000002,
+      "reference_area_cm2": 128.245704
+    },
+    {
+      "name": "ritm_cuda_id62",
+      "exact_equal": false,
+      "max_probability_error": 0.0002351999282836914,
+      "changed_mask_pixels": 0,
+      "iou_reference_311": 0.9198322069447681,
+      "iou_reference_314": 0.9198322069447681,
+      "delta_iou_reference": 0.0,
+      "area_cm2_311": 75.45944,
+      "area_cm2_314": 75.45944,
+      "reference_area_cm2": 70.122496
+    },
+    {
+      "name": "ritm_cuda_id87",
+      "exact_equal": false,
+      "max_probability_error": 0.0002148747444152832,
+      "changed_mask_pixels": 0,
+      "iou_reference_311": 0.9545740757398579,
+      "iou_reference_314": 0.9545740757398579,
+      "delta_iou_reference": 0.0,
+      "area_cm2_311": 192.951732,
+      "area_cm2_314": 192.951732,
+      "reference_area_cm2": 191.043156
+    },
+    {
+      "name": "dextr_cuda_id259",
+      "exact_equal": false,
+      "max_probability_error": 0.0021104812622070312,
+      "changed_mask_pixels": 8,
+      "iou_reference_311": 0.5905829474995262,
+      "iou_reference_314": 0.5904870191396627,
+      "delta_iou_reference": -9.592835986349524e-05,
+      "area_cm2_311": 316.452504,
+      "area_cm2_314": 316.50552,
+      "reference_area_cm2": 202.618316
+    },
+    {
+      "name": "dextr_cuda_id252",
+      "exact_equal": false,
+      "max_probability_error": 0.0008989274501800537,
+      "changed_mask_pixels": 1,
+      "iou_reference_311": 0.9272786247161855,
+      "iou_reference_314": 0.927338782924614,
+      "delta_iou_reference": 6.0158208428529036e-05,
+      "area_cm2_311": 134.26302,
+      "area_cm2_314": 134.254184,
+      "reference_area_cm2": 128.245704
+    },
+    {
+      "name": "dextr_cuda_id62",
+      "exact_equal": false,
+      "max_probability_error": 0.0006517171859741211,
+      "changed_mask_pixels": 0,
+      "iou_reference_311": 0.9509791846286488,
+      "iou_reference_314": 0.9509791846286488,
+      "delta_iou_reference": 0.0,
+      "area_cm2_311": 69.839744,
+      "area_cm2_314": 69.839744,
+      "reference_area_cm2": 70.122496
+    },
+    {
+      "name": "dextr_cuda_id87",
+      "exact_equal": false,
+      "max_probability_error": 0.0019153356552124023,
+      "changed_mask_pixels": 1,
+      "iou_reference_311": 0.9586516853932584,
+      "iou_reference_314": 0.9586086018605905,
+      "delta_iou_reference": -4.30835326679091e-05,
+      "area_cm2_311": 194.02972400000002,
+      "area_cm2_314": 194.03856,
+      "reference_area_cm2": 191.043156
+    }
+  ],
+  "dem_comparisons": [
+    {
+      "name": "projected_metre",
+      "slope_311": 26.565052032470703,
+      "slope_314": 26.565052032470703,
+      "surface_factor_311": 1.1180341243743896,
+      "surface_factor_314": 1.1180341243743896,
+      "surface_change_percent": 0.0,
+      "scale1_reproduces_legacy_slope": true,
+      "expected_surface_factor": 1.118033988749895
+    },
+    {
+      "name": "geographic_equator",
+      "slope_311": 89.99897003173828,
+      "slope_314": 26.565052032470703,
+      "surface_factor_311": 1.0,
+      "surface_factor_314": 1.1180341243743896,
+      "surface_change_percent": 11.803412437438965,
+      "scale1_reproduces_legacy_slope": true,
+      "expected_surface_factor": 1.118033988749895
+    },
+    {
+      "name": "geographic_lat24",
+      "slope_311": 89.99887084960938,
+      "slope_314": 26.577699661254883,
+      "surface_factor_311": 1.0,
+      "surface_factor_314": 1.1181573867797852,
+      "surface_change_percent": 11.815738677978516,
+      "scale1_reproduces_legacy_slope": true,
+      "expected_surface_factor": 1.118033988749895
+    },
+    {
+      "name": "horizontal_us_survey_foot_vertical_metre",
+      "slope_311": 8.665216445922852,
+      "slope_314": 26.565044403076172,
+      "surface_factor_311": 1.01154625415802,
+      "surface_factor_314": 1.1180340051651,
+      "surface_change_percent": 10.527225084305925,
+      "scale1_reproduces_legacy_slope": true,
+      "expected_surface_factor": 1.118033988749895
+    },
+    {
+      "name": "horizontal_metre_vertical_foot",
+      "slope_311": 58.633514404296875,
+      "slope_314": 26.565052032470703,
+      "surface_factor_311": 1.921191692352295,
+      "surface_factor_314": 1.1180341243743896,
+      "surface_change_percent": -41.805175984002105,
+      "scale1_reproduces_legacy_slope": true,
+      "expected_surface_factor": 1.118033988749895
+    },
+    {
+      "name": "projected_metre_nodata",
+      "slope_311": 26.565052032470703,
+      "slope_314": 26.565052032470703,
+      "surface_factor_311": 1.6331120729446411,
+      "surface_factor_314": 1.6331120729446411,
+      "surface_change_percent": 0.0,
+      "scale1_reproduces_legacy_slope": true,
+      "expected_surface_factor": 1.118033988749895
+    },
+    {
+      "name": "official_Plot18_center64",
+      "slope_311": 36.593658447265625,
+      "slope_314": 36.593658447265625,
+      "surface_factor_311": 1.3211520910263062,
+      "surface_factor_314": 1.3211520910263062,
+      "surface_change_percent": 0.0,
+      "scale1_reproduces_legacy_slope": true,
+      "expected_surface_factor": null
+    }
+  ],
+  "dem_metadata": [
+    {
+      "name": "projected_metre",
+      "metadata": {
+        "size": [
+          64,
+          64
+        ],
+        "crs": "WGS 84 / Pseudo-Mercator",
+        "geographic": false,
+        "horizontal_unit": "metre",
+        "horizontal_metre_factor": 1.0,
+        "band_unit": "m",
+        "band_nodata": null,
+        "geotransform": [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      "slope_nodata_pixels": 0
+    },
+    {
+      "name": "geographic_equator",
+      "metadata": {
+        "size": [
+          64,
+          64
+        ],
+        "crs": "WGS 84",
+        "geographic": true,
+        "horizontal_unit": "degree",
+        "horizontal_metre_factor": null,
+        "band_unit": "m",
+        "band_nodata": null,
+        "geotransform": [
+          0.0,
+          8.983152841195214e-06,
+          0.0,
+          0.0,
+          0.0,
+          -8.983152841195214e-06
+        ]
+      },
+      "slope_nodata_pixels": 0
+    },
+    {
+      "name": "geographic_lat24",
+      "metadata": {
+        "size": [
+          64,
+          64
+        ],
+        "crs": "WGS 84",
+        "geographic": true,
+        "horizontal_unit": "degree",
+        "horizontal_metre_factor": null,
+        "band_unit": "m",
+        "band_nodata": null,
+        "geotransform": [
+          0.0,
+          9.827838390287347e-06,
+          0.0,
+          24.0,
+          0.0,
+          -8.983152841195214e-06
+        ]
+      },
+      "slope_nodata_pixels": 0
+    },
+    {
+      "name": "horizontal_us_survey_foot_vertical_metre",
+      "metadata": {
+        "size": [
+          64,
+          64
+        ],
+        "crs": "NAD83 / New York Long Island (ftUS)",
+        "geographic": false,
+        "horizontal_unit": "US survey foot",
+        "horizontal_metre_factor": 0.30480060960121924,
+        "band_unit": "m",
+        "band_nodata": null,
+        "geotransform": [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      "slope_nodata_pixels": 0
+    },
+    {
+      "name": "horizontal_metre_vertical_foot",
+      "metadata": {
+        "size": [
+          64,
+          64
+        ],
+        "crs": "WGS 84 / Pseudo-Mercator",
+        "geographic": false,
+        "horizontal_unit": "metre",
+        "horizontal_metre_factor": 1.0,
+        "band_unit": "ft",
+        "band_nodata": null,
+        "geotransform": [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      "slope_nodata_pixels": 0
+    },
+    {
+      "name": "projected_metre_nodata",
+      "metadata": {
+        "size": [
+          64,
+          64
+        ],
+        "crs": "WGS 84 / Pseudo-Mercator",
+        "geographic": false,
+        "horizontal_unit": "metre",
+        "horizontal_metre_factor": 1.0,
+        "band_unit": "m",
+        "band_nodata": -9999.0,
+        "geotransform": [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      "slope_nodata_pixels": 100
+    },
+    {
+      "name": "official_Plot18_center64",
+      "metadata": {
+        "size": [
+          64,
+          64
+        ],
+        "crs": "unnamed",
+        "geographic": false,
+        "horizontal_unit": "metre",
+        "horizontal_metre_factor": 1.0,
+        "band_unit": "",
+        "band_nodata": -32767.0,
+        "geotransform": [
+          7.978666666666666,
+          0.0006666666666666666,
+          0.0,
+          8.021333333333333,
+          0.0,
+          -0.0006666666666666666
+        ]
+      },
+      "slope_nodata_pixels": 0
+    }
+  ],
+  "sequential_performance": {
+    "matched_input_weights_flags_gpu_threads": true,
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "torch_cpu_threads": 16,
+    "comparisons": [
+      {
+        "name": "RITM image plus two clicks",
+        "device": "cpu",
+        "median_seconds_311": 0.30180979997385293,
+        "median_seconds_314": 0.25473499996587634,
+        "latency_change_percent": -15.597505452790095,
+        "range_311": [
+          0.2942848999518901,
+          0.3041363999946043
+        ],
+        "range_314": [
+          0.25431889994069934,
+          0.27484119997825474
+        ],
+        "peak_cuda_allocated_mib_311": null,
+        "peak_cuda_allocated_mib_314": null
+      },
+      {
+        "name": "DEXTR forward and postprocessing",
+        "device": "cpu",
+        "median_seconds_311": 2.219922099960968,
+        "median_seconds_314": 3.5249777999706566,
+        "latency_change_percent": 58.78835568296002,
+        "range_311": [
+          2.027369000017643,
+          2.262533999979496
+        ],
+        "range_314": [
+          2.2424248999450356,
+          3.540230500046164
+        ],
+        "peak_cuda_allocated_mib_311": null,
+        "peak_cuda_allocated_mib_314": null
+      },
+      {
+        "name": "SAM new image plus click",
+        "device": "cpu",
+        "median_seconds_311": 39.46041800000239,
+        "median_seconds_314": 37.46469870000146,
+        "latency_change_percent": -5.057521945157317,
+        "range_311": [
+          36.022805899963714,
+          43.75495719991159
+        ],
+        "range_314": [
+          35.35561329999473,
+          49.701857000007294
+        ],
+        "peak_cuda_allocated_mib_311": null,
+        "peak_cuda_allocated_mib_314": null
+      },
+      {
+        "name": "SAM cached image click",
+        "device": "cpu",
+        "median_seconds_311": 0.08606420003343374,
+        "median_seconds_314": 0.11693130002822727,
+        "latency_change_percent": 35.86520293316207,
+        "range_311": [
+          0.07500620000064373,
+          0.0889817998977378
+        ],
+        "range_314": [
+          0.11354910000227392,
+          0.15234139992389828
+        ],
+        "peak_cuda_allocated_mib_311": null,
+        "peak_cuda_allocated_mib_314": null
+      },
+      {
+        "name": "RITM image plus two clicks",
+        "device": "cuda",
+        "median_seconds_311": 0.08570959989447147,
+        "median_seconds_314": 0.11780370003543794,
+        "latency_change_percent": 37.44516387952086,
+        "range_311": [
+          0.08098810003139079,
+          0.09161530004348606
+        ],
+        "range_314": [
+          0.10258950002025813,
+          0.11904549994505942
+        ],
+        "peak_cuda_allocated_mib_311": 81.560546875,
+        "peak_cuda_allocated_mib_314": 81.560546875
+      },
+      {
+        "name": "DEXTR forward and postprocessing",
+        "device": "cuda",
+        "median_seconds_311": 0.06354130001273006,
+        "median_seconds_314": 0.05498090002220124,
+        "latency_change_percent": -13.472182641547793,
+        "range_311": [
+          0.061344899935647845,
+          0.06536689994391054
+        ],
+        "range_314": [
+          0.048481600009836257,
+          0.05673630000092089
+        ],
+        "peak_cuda_allocated_mib_311": 342.765625,
+        "peak_cuda_allocated_mib_314": 342.765625
+      },
+      {
+        "name": "SAM new image plus click",
+        "device": "cuda",
+        "median_seconds_311": 1.2233487000921741,
+        "median_seconds_314": 1.2305550000164658,
+        "latency_change_percent": 0.5890634390463445,
+        "range_311": [
+          1.219800499966368,
+          1.2456769000273198
+        ],
+        "range_314": [
+          1.2234719999833032,
+          1.2642864000517875
+        ],
+        "peak_cuda_allocated_mib_311": 5739.416015625,
+        "peak_cuda_allocated_mib_314": 5740.416015625
+      },
+      {
+        "name": "SAM cached image click",
+        "device": "cuda",
+        "median_seconds_311": 0.007130900048650801,
+        "median_seconds_314": 0.030133599997498095,
+        "latency_change_percent": 322.57779231107736,
+        "range_311": [
+          0.0069432000163942575,
+          0.007804199936799705
+        ],
+        "range_314": [
+          0.029372400022111833,
+          0.035613999934867024
+        ],
+        "peak_cuda_allocated_mib_311": 2558.13037109375,
+        "peak_cuda_allocated_mib_314": 2559.13037109375
+      }
+    ],
+    "peak_process_working_set_mib": {
+      "py311": 6596.421875,
+      "py314": 9932.984375
+    },
+    "compiled_cuda_architectures": {
+      "py311": [
+        "sm_50",
+        "sm_60",
+        "sm_61",
+        "sm_70",
+        "sm_75",
+        "sm_80",
+        "sm_86",
+        "sm_90"
+      ],
+      "py314": [
+        "sm_70",
+        "sm_75",
+        "sm_80",
+        "sm_86",
+        "sm_90",
+        "sm_100",
+        "sm_120"
+      ]
+    },
+    "limits": "One sequential session; one warmup/three repeats; power and thermal state not controlled; not an older-machine qualification or a minimum-memory specification"
+  },
+  "targeted_performance": {
+    "dextr_cpu_py311": {
+      "method": "2 warmups and 7 timed repeats per action; device synchronization; models loaded once; same sample/weights; not a GUI or older-hardware benchmark",
+      "results": [
+        {
+          "name": "DEXTR forward and postprocessing",
+          "device": "cpu",
+          "warmup_runs": 2,
+          "timed_runs": 7,
+          "seconds": [
+            4.670181400026195,
+            2.724191499990411,
+            3.211266800062731,
+            3.4952851000707597,
+            2.966690499917604,
+            2.3901820000028238,
+            2.6814902999904007
+          ],
+          "median_seconds": 2.966690499917604,
+          "min_seconds": 2.3901820000028238,
+          "max_seconds": 4.670181400026195,
+          "cached_checkpoint_load_seconds": 0.85293339996133,
+          "memory_before": {
+            "working_set_mib": 1295.109375,
+            "peak_working_set_mib": 1297.11328125,
+            "private_usage_mib": 3296.9921875
+          },
+          "memory_after": {
+            "working_set_mib": 1296.1875,
+            "peak_working_set_mib": 1297.9375,
+            "private_usage_mib": 3297.859375
+          },
+          "peak_cuda_allocated_mib": null,
+          "peak_cuda_reserved_mib": null
+        }
+      ],
+      "potentially_concurrent": false
+    },
+    "dextr_cpu_py314": {
+      "method": "2 warmups and 7 timed repeats per action; device synchronization; models loaded once; same sample/weights; not a GUI or older-hardware benchmark",
+      "results": [
+        {
+          "name": "DEXTR forward and postprocessing",
+          "device": "cpu",
+          "warmup_runs": 2,
+          "timed_runs": 7,
+          "seconds": [
+            4.108218800043687,
+            3.8495493000373244,
+            7.847897099913098,
+            3.8845213000895455,
+            4.342577500035986,
+            3.1588156999787316,
+            5.718331699958071
+          ],
+          "median_seconds": 4.108218800043687,
+          "min_seconds": 3.1588156999787316,
+          "max_seconds": 7.847897099913098,
+          "cached_checkpoint_load_seconds": 0.9750068999128416,
+          "memory_before": {
+            "working_set_mib": 1234.75,
+            "peak_working_set_mib": 1410.69140625,
+            "private_usage_mib": 3375.375
+          },
+          "memory_after": {
+            "working_set_mib": 1353.7890625,
+            "peak_working_set_mib": 1410.69140625,
+            "private_usage_mib": 3575.97265625
+          },
+          "peak_cuda_allocated_mib": null,
+          "peak_cuda_reserved_mib": null
+        }
+      ],
+      "potentially_concurrent": false
+    },
+    "sam_cuda_py311": {
+      "method": "3 warmups and 50 timed repeats per action; device synchronization; models loaded once; same sample/weights; not a GUI or older-hardware benchmark",
+      "results": [
+        {
+          "name": "SAM cached image click",
+          "device": "cuda",
+          "warmup_runs": 3,
+          "timed_runs": 50,
+          "seconds": [
+            0.022033700020983815,
+            0.009882599930278957,
+            0.013642899924889207,
+            0.014475399977527559,
+            0.01474660006351769,
+            0.011032699956558645,
+            0.012222999939695,
+            0.009911999921314418,
+            0.011187499971129,
+            0.013860599952749908,
+            0.012854999979026616,
+            0.01579540001694113,
+            0.01279810001142323,
+            0.009841199964284897,
+            0.012159599922597408,
+            0.00815919996239245,
+            0.008783099940046668,
+            0.009360199910588562,
+            0.012099300045520067,
+            0.019252499914728105,
+            0.009207200026139617,
+            0.012625899980776012,
+            0.007052699918858707,
+            0.006943800020962954,
+            0.007829600013792515,
+            0.006896200007759035,
+            0.00935210008174181,
+            0.008347700000740588,
+            0.006942700012587011,
+            0.007742600049823523,
+            0.007249700021930039,
+            0.010080600040964782,
+            0.008254699991084635,
+            0.007262700004503131,
+            0.009333400055766106,
+            0.007834500051103532,
+            0.009281100006774068,
+            0.006741599994711578,
+            0.007684800075367093,
+            0.006993400049395859,
+            0.006837800028733909,
+            0.010766700026579201,
+            0.009997399989515543,
+            0.009050399996340275,
+            0.007104699965566397,
+            0.006886999937705696,
+            0.009294799994677305,
+            0.007264000014401972,
+            0.009146800031885505,
+            0.008970399969257414
+          ],
+          "median_seconds": 0.009287950000725687,
+          "min_seconds": 0.006741599994711578,
+          "max_seconds": 0.022033700020983815,
+          "cached_checkpoint_load_seconds": 4.245553400018252,
+          "memory_before": {
+            "working_set_mib": 1435.99609375,
+            "peak_working_set_mib": 5658.5859375,
+            "private_usage_mib": 9603.3359375
+          },
+          "memory_after": {
+            "working_set_mib": 1436.00390625,
+            "peak_working_set_mib": 5658.5859375,
+            "private_usage_mib": 9603.3359375
+          },
+          "peak_cuda_allocated_mib": 2557.7587890625,
+          "peak_cuda_reserved_mib": 6266.0
+        }
+      ],
+      "potentially_concurrent": true
+    },
+    "sam_cuda_py314": {
+      "method": "3 warmups and 50 timed repeats per action; device synchronization; models loaded once; same sample/weights; not a GUI or older-hardware benchmark",
+      "results": [
+        {
+          "name": "SAM cached image click",
+          "device": "cuda",
+          "warmup_runs": 3,
+          "timed_runs": 50,
+          "seconds": [
+            0.018187400070019066,
+            0.014768099994398654,
+            0.02124330005608499,
+            0.02473850001115352,
+            0.021643899963237345,
+            0.021214900072664022,
+            0.02093650004826486,
+            0.023361500003375113,
+            0.014290399965830147,
+            0.017947799991816282,
+            0.020393899991177022,
+            0.01302329997997731,
+            0.008835499989800155,
+            0.01298190001398325,
+            0.016455599921755493,
+            0.011943000019527972,
+            0.01781059999484569,
+            0.02451469993684441,
+            0.01729930005967617,
+            0.012957900064066052,
+            0.011307199951261282,
+            0.012438099947758019,
+            0.011679099989123642,
+            0.016218500095419586,
+            0.012190300039947033,
+            0.011448799981735647,
+            0.013227000017650425,
+            0.010315099963918328,
+            0.01103639998473227,
+            0.010575099964626133,
+            0.013235500082373619,
+            0.011889600078575313,
+            0.016366600058972836,
+            0.016547300037927926,
+            0.015123199904337525,
+            0.026740900008007884,
+            0.013764700037427247,
+            0.018897600006312132,
+            0.016230499953962862,
+            0.020427500014193356,
+            0.016628800076432526,
+            0.011704899952746928,
+            0.014503300073556602,
+            0.015694100060500205,
+            0.011571099981665611,
+            0.019472300074994564,
+            0.019149600062519312,
+            0.015606199973262846,
+            0.018300999887287617,
+            0.02089509996585548
+          ],
+          "median_seconds": 0.015956300077959895,
+          "min_seconds": 0.008835499989800155,
+          "max_seconds": 0.026740900008007884,
+          "cached_checkpoint_load_seconds": 6.162789799971506,
+          "memory_before": {
+            "working_set_mib": 5019.4140625,
+            "peak_working_set_mib": 5771.30859375,
+            "private_usage_mib": 14644.6875
+          },
+          "memory_after": {
+            "working_set_mib": 5019.41796875,
+            "peak_working_set_mib": 5771.30859375,
+            "private_usage_mib": 14644.6875
+          },
+          "peak_cuda_allocated_mib": 2558.7587890625,
+          "peak_cuda_reserved_mib": 6266.0
+        }
+      ],
+      "potentially_concurrent": true
+    }
+  },
+  "sam_checkpoint": {
+    "source": "https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth",
+    "bytes": 2564550879,
+    "sha256": "a7bf3b02f3ebf1267aba913ff637d9a2d5c33d3173bb679e46d9f338c26f262e",
+    "zip_crc_valid": true
+  },
+  "limits": [
+    "No merge or upstream Python 3.14 post.",
+    "One recent test PC, not an older/IMR hardware qualification.",
+    "Reference contours are not independent ground truth; four regions from one project.",
+    "Scientific GDAL default changes; historical comparability is not guaranteed.",
+    "Timing session and fresh controls are exploratory; SAM controls potentially concurrent.",
+    "No full retraining, SAM quality benchmark, universal GPU chooser or locked release matrix."
+  ]
+}

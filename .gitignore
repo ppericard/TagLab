@@ -171,3 +171,8 @@ mask.png
 segmentation.png
 tiles_cutted.png
 tiles_cut.png
+
+# Functional-test pretrained backbone cache
+models/.torch/
+models/.albumentations*/
+models/.samples/

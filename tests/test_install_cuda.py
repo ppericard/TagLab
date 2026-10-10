@@ -11,21 +11,23 @@ INSTALLER = Path(__file__).resolve().parents[1] / 'install.py'
 
 
 class CudaDetectionTests(unittest.TestCase):
-    def run_installer(self, output, return_code=0, args=()):
+    def run_installer(self, output, return_code=0, args=(), python_version=(3, 11, 0), os_name='Windows', machine='AMD64'):
         console = io.StringIO()
         with contextlib.ExitStack() as stack:
-            stack.enter_context(patch('platform.system', return_value='Windows'))
-            stack.enter_context(patch('sys.version_info', (3, 11, 0)))
+            stack.enter_context(patch('platform.system', return_value=os_name))
+            stack.enter_context(patch('sys.version_info', python_version))
+            stack.enter_context(patch('platform.machine', return_value=machine))
             stack.enter_context(patch('sys.argv', [str(INSTALLER), *args]))
             probe = stack.enter_context(patch(
                 'subprocess.getstatusoutput', return_value=(return_code, output)))
             installs = stack.enter_context(patch('subprocess.check_call'))
+            self.installs = installs
             stack.enter_context(patch('urllib.request.build_opener'))
             stack.enter_context(patch('urllib.request.install_opener'))
-            stack.enter_context(patch('urllib.request.urlretrieve'))
+            self.downloads = stack.enter_context(patch('urllib.request.urlretrieve'))
             stack.enter_context(patch('os.remove'))
             stack.enter_context(patch('pathlib.Path.is_file', return_value=True))
-            stack.enter_context(patch('model_download.ensure_model', return_value=False))
+            self.models = stack.enter_context(patch('model_download.ensure_model', return_value=False))
             stack.enter_context(contextlib.redirect_stdout(console))
             result = runpy.run_path(str(INSTALLER), run_name='__main__')
 
