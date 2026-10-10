@@ -25,6 +25,7 @@ class CudaDetectionTests(unittest.TestCase):
             stack.enter_context(patch('urllib.request.urlretrieve'))
             stack.enter_context(patch('os.remove'))
             stack.enter_context(patch('pathlib.Path.is_file', return_value=True))
+            stack.enter_context(patch('model_download.ensure_model', return_value=False))
             stack.enter_context(contextlib.redirect_stdout(console))
             result = runpy.run_path(str(INSTALLER), run_name='__main__')
 
